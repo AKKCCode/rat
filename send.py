@@ -21,9 +21,6 @@ while True:
         os.system("cls")
     elif command == "exit":
         break
-    elif command == "nircmd":
-        download = "curl https://www.nirsoft.net/utils/nircmd.zip -o nircmd.zip && tar -xf nircmd.zip && del nircmd.zip"
-        s.sendall(download.encode())
     else:
         s.send(command.encode())
 

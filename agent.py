@@ -52,7 +52,7 @@ while True:
                     )
 
                     if not r:
-                        r = "[+] Command succes just no output\n".encode()
+                        r = "[+] Command succes, just no output\n".encode()
 
                 except subprocess.CalledProcessError as e:
                     r = e.output
